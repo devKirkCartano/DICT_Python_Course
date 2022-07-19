@@ -1,0 +1,4 @@
+I like Python's syntax
+After this course I want to learn advance topic about Python
+I will apply the knowledge by practicing more
+One of my goals is to become a Python developer
