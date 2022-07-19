@@ -36,5 +36,7 @@ print(list(combined_list))
 relative_age = dict(zip(relative, age))
 print(relative_age)
 
-# To get a single value of a key
+# To get a single value of a key using function
 print(shopping_list.get("weird hat"))
+# To get a single value of a key using dictionary name and key
+print(shopping_list["weird hat"])
