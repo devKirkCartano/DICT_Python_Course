@@ -21,6 +21,8 @@ assert employee_of_the_year == "John"
 
 # finally, allows code no matter what the result of the try and except block
 
+random_num = 0
+x = 0
 try:
     print(random_num)
 except:
