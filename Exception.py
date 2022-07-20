@@ -23,6 +23,7 @@ assert employee_of_the_year == "John"
 
 random_num = 0
 x = 0
+h = 0
 try:
     print(random_num)
 except:
