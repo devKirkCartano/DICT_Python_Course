@@ -1,0 +1,11 @@
+
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Hello Ella, I am Kirk your friend and I will wait for you .</h1>
+    <p>Let's just focus first in our studies</p>
+    <p>I will keep my promise</p>
+    {% for posts in posts%}
+    <h1>{{posts.title}}</h1>
+    <h1>{{posts.content}}</h1>
+    {% endfor %}
+{% endblock content %}
