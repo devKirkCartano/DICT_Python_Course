@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/')  # decorator
+@app.route('/')  # decorator ,creates a route/link for the function
 @app.route('/home')  # bind multiple routes to one function
 def home():
     return "<h1>Hello Ella!</h1>"
