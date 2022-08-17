@@ -1,21 +1,22 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
+posts = [ 
+    {'title': 'A', 'content': 'B'},
+    {'title': 'C', 'content': 'D'},
+    {'title': 'E', 'content': 'F'},
+    {'title': 'G', 'content': 'H'},
+]
 @app.route('/')  # decorator ,creates a route/link for the function
 @app.route('/home')  # bind multiple routes to one function
 def home():
-    return "<h1>Hello Ella!</h1>"
+    return render_template("index.html")
 
 
 @app.route('/friend')
 def friend():
-    return """
-    <h1>Hello Ella, I am Kirk your friend and I will wait for you <3.</h1>
-    <p>Let's just focus first in our studies</p>
-    <p>I will keep my promise</p>
-    """
+    return render_template("friend.html", posts=posts, title="Friend Page")
 @app.route('/goal')
 def goal():
     return """<h1>I want to become a computer programmer or web developer someday!</h1>
