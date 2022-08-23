@@ -19,9 +19,7 @@ def friend():
     return render_template("friend.html", posts=posts, title="Friend Page")
 @app.route('/goal')
 def goal():
-    return """<h1>I want to become a computer programmer or web developer someday!</h1>
-    <p>I will commit to myself that will practice my coding skills everyday</p>
-    """
+    return render_template("goal.html", title="Goal Page")
 if __name__ == '__main__':
     app.run()
     
