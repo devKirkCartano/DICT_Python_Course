@@ -1,10 +1,12 @@
 {% extends "layout.html" %}
 {% block content %}
+    <title>Friend Page</title>
     <h1>Hello Ella, I am Kirk your friend and I will wait for you .</h1>
     <p>Let's just focus first in our studies</p>
     <p>I will keep my promise</p>
     {% for posts in posts%}
     <h1>{{posts.title}}</h1>
-    <h1>{{posts.content}}</h1>
+    <p>By {{posts.content}} on {{posts.date_posted}}</p>
+    <p>{{posts.content}}</p>
     {% endfor %}
 {% endblock content %}
