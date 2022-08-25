@@ -3,10 +3,15 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 posts = [ 
-    {'title': 'A', 'content': 'B'},
-    {'title': 'C', 'content': 'D'},
-    {'title': 'E', 'content': 'F'},
-    {'title': 'G', 'content': 'H'},
+    {"author": "Barbara Go",
+    "title": "Jumping Fun!",
+    "content": "Lots of frogs can leap more than 20 times their body length.",
+    "date_posted": "April 3, 2021"},
+    {"author": "Jake Daze",
+    "title": "Grizzly Jaws",
+    "content": "The bite of a grizzly bear is strong enough to crush a bowling ball.",
+    "date_posted": "April 4, 2021"},
+    
 ]
 @app.route('/')  # decorator ,creates a route/link for the function
 @app.route('/home')  # bind multiple routes to one function
